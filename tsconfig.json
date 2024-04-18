@@ -1,0 +1,24 @@
+{
+  "extends": "@react-native/typescript-config/tsconfig.json",
+  "compilerOptions": {
+    "jsx": "react",
+    /* Visit https://aka.ms/tsconfig.json to read more about this file */
+    "moduleResolution": "node",
+    "esModuleInterop": true,   
+    /* Completeness */
+    "skipLibCheck": true, /* Skip type checking all .d.ts files. */
+    "strict": true,
+    "noUnusedLocals": true,
+    "baseUrl": ".",
+    "paths": {
+      "@screens/*": ["app/screens/*"],
+      "@components/*": ["app/components/*"],
+      "@components": ["app/components"],
+      "@services/*":["app/services/*"],
+      "@services":["app/services"],
+      "@utils/*":["app/utils/*"],
+      "@utils":["app/utils"],
+      "@redux":["app/redux"]
+    }
+  }
+}
