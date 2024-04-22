@@ -24,13 +24,6 @@ import { RootStackParamList } from "@utils/types";
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
-if (
-  Platform.OS === "android" &&
-  UIManager.setLayoutAnimationEnabledExperimental
-) {
-  UIManager.setLayoutAnimationEnabledExperimental(true);
-}
-
 export default function App() {
   const drawerRef = createNavigationContainerRef() as any;
   const goBackRef = useRef(true);
